@@ -1,0 +1,17 @@
+{
+  "name": "rrtpmonitor",
+  "version": "0.0.2",
+  "description": "Check RRTP rate and push to IFTTT",
+  "main": "rrtpmonitor.js",
+  "scripts": {
+    "test": "node rrtpmonitor.js"
+  },
+  "keywords": [
+    "rrtp"
+  ],
+  "author": "Chris Means",
+  "license": "MIT",
+  "dependencies": {
+    "resilient": "^0.3.3"
+  }
+}
