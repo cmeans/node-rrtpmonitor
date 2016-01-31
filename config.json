@@ -1,0 +1,27 @@
+{
+  "lastThresholdFileName": "./lastThreshold.txt",
+  "rrtp": 
+  {
+    "servers": 
+    [
+        "https://hourlypricing.comed.com"
+    ],
+    "path": "/api?type=currenthouraverage"
+  },
+  "maker":
+  {
+      "servers":
+      [
+          "https://maker.ifttt.com/"
+      ],
+      "path": "trigger/rrtp/with/key/PUT-YOUR-MAKER-KEY-HERE"
+  },
+  "thresholds":
+  [
+      { "name": "Negative", "value": 0.0, "color": "white"},
+      { "name": "Low", "value": 4.0, "color": "green" },
+      { "name": "Moderate", "value": 7.0, "color": "blue" },
+      { "name": "High", "value": 10.0, "color": "red" },
+      { "name": "Extreme", "value": 1000.0, "color": "yellow" }
+  ]
+}
