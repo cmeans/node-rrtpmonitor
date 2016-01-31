@@ -1,6 +1,14 @@
 # node-rrtpmonitor
 Check the current ComEd RRTP Rate and trigger an event in IFTTT.
 
+This routine will fire a Maker trigger whenever the RRTP rate threshold changes (this way you're not getting constant events firing).
+
+The triggered event `rrtp` includes 3 variables:
+
+1. Threshold name
+2. Current Hourly Average RRTP price
+3. Threshold color
+
 ## Installation
 As this isn't properly packaged up in NPM yet, simply copy these files into any folder.
 You will need to use NPM to install Resilient which is a declared dependency for this package.
